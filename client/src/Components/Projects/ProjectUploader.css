@@ -1,0 +1,14 @@
+.proj{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+input{
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+}

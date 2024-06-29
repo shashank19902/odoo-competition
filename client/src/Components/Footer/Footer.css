@@ -1,0 +1,31 @@
+.footer-links-section {
+  background: #7c4dff;
+}
+
+.footer-links-section i {
+  color: #fff;
+}
+
+.footer-links-section i:hover {
+  color: #000;
+}
+
+.footer-copyright-section {
+  color: white;
+  font-size: 17px;
+  font-weight: 900;
+  font-family: "Montserrat", "serif";
+  color: white;
+  background: #001972;
+}
+
+.copyright-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+  font-family: "Montserrat", "serif";
+}
+
+.copyright-link:hover {
+  color: yellow;
+}

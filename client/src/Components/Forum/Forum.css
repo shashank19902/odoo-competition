@@ -1,0 +1,26 @@
+h3{
+    font-family: 'Lato';
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.problem-description, .problem-title{
+    padding: 20px 10px;
+    text-align: left;
+}
+
+.forum-inputs{
+    margin: 15px auto;
+    max-width: 1000px;
+}
+
+.problem-description{
+    min-height: 130px;
+    overflow-wrap: break-word;
+}
+
+textarea{
+    resize: none;
+    max-width: 980px;
+    margin: auto;
+}

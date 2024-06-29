@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.active {
+  color: #fff !important;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #000;
+  content: ">";
+  font-weight: bold;
+}
+
+.breadcrumb-navbar {
+  text-align: center;
+}
+
+.breadcrumb-navlink {
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px;
+  display: flex;
+  color: white;
+  background: #001972;
+}
+
+.sname {
+  text-align: center;
+  margin: 10px;
+  font-weight: normal;
+}
+
+.nine h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #001972;
+  margin: 10px 0;
+  letter-spacing: 1px;
+  font-family: "Boogaloo", cursive;
+  font-weight: 400;
+}
+
+.fname-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nine h1 p {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #888;
+  word-spacing: 1px;
+  display: block;
+  width: max-content;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.fullform::after {
+  content: " ";
+  display: block;
+  border-top: 2px solid #261290;
+  border-bottom: 2px solid #261290;
+  height: 5px;
+  width: 30%;
+  margin: 7px auto;
+}
+
+.nine h1 span:after,
+.nine h1 span:before {
+  content: " ";
+  display: none;
+  border-bottom: 1px solid #001972;
+  border-top: 1px solid #001972;
+  height: 5px;
+  background-color: #f8f8f8;
+}
+
+table#demotable {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px black solid;
+}
+
+table#demotable td {
+  border: 1px black solid;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.headings {
+  font-weight: bold;
+  font-size: 20px;
+  background: purple;
+  color: white;
+  overflow-wrap: break-word;
+}
+
+/*  */
+/*
+ CSS for the main interaction
+*/
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 80%;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+  color: #06c;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #06c;
+}
+
+.tabset > input:checked + label {
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+
+/*
+ Demo purposes only
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.tabset {
+  max-width: 65em;
+}
+
+.no-mat-found {
+  font-size: 1.3rem;
+  padding: 20px 12px;
+}
+
+.materials-not-found {
+  margin: 50px auto;
+  padding: 50px 25px;
+  color: black;
+  border: 2px solid purple;
+  border-radius: 25px;
+}
+
+.materials-not-found h4 {
+  font-weight: bold;
+}

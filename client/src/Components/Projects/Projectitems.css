@@ -1,0 +1,132 @@
+.btn-blue {
+  border: 1px solid #001972;
+  background: #001972;
+}
+
+.btn-blue:hover {
+  color: #001972;
+  background-color: white;
+}
+
+.card {
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.card img {
+  max-height: 275px;
+}
+
+.greater {
+  text-decoration: none;
+  color: #5b43c0;
+  font-weight: 900;
+}
+
+.card-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.author-name{
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  padding: 10px 0;
+  font-size: 17px;
+  min-height: 76px;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.author{
+  min-height: 76px;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.author-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: #787878;
+}
+
+.find-out-more-link {
+  font-weight: 800;
+  background-image: linear-gradient(to right, #000, #000 50%, #5b43c0 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.find-out-more-link:before {
+  content: "";
+  background: #000;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.find-out-more-link:hover {
+  background-position: 0;
+}
+
+.find-out-more-link:hover::before {
+  width: 100%;
+}
+
+.spinner {
+  margin: auto;
+  color: rgb(31, 16, 79);
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  display: flex !important;
+}
+
+.tags li {
+  font-size: 14px;
+  float: left;
+}
+
+.tag {
+  background: #007fff50;
+  border-radius: 10px;
+  color: #000;
+  padding: 4px 7px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+}
+
+.tag:hover {
+  background-color: #001972;
+  color: white;
+}

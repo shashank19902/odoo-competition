@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-size: auto;
+}
+
+.outer-login-container {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #00f2ff, #0084ff);
+}
+
+.login-container {
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+.login-card {
+  border-radius: 20px;
+  height: 600px;
+  background-image: linear-gradient(to left, #0084ff, #00f2ff);
+  border: none;
+  overflow: hidden;
+  box-shadow: 0px 5px 8px #414141;
+  z-index: 1;
+}
+
+.circle {
+  position: absolute;
+  bottom: -230px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  clip-path: circle(50%);
+  height: 700px;
+  width: 700px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.my-header {
+  margin-top: 30px;
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #0084ff, #00f2ff);
+  background-clip: text;
+  color: transparent;
+}
+
+.form-group{
+  margin: 20px 0 !important;
+}
+
+.myInput {
+  padding: 20px;
+  border: 2px solid #001972;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+.label-note{
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.login-button{
+  color: white;
+  background: #001972;
+  border: 2px solid #001972;
+  margin: 15px 0;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 10px; 
+}
+
+.login-button:hover{
+  border: 2px solid #001972;
+  color: #001972;
+  background: #fff;
+}

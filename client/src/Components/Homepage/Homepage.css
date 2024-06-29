@@ -1,0 +1,135 @@
+.text-column,
+.image-column {
+  width: 50%;
+  float: left;
+}
+
+.welcome-text {
+  color: #001972;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.textbox {
+  color: #001972;
+  margin: 50px auto 30px auto;
+  text-align: justify;
+  letter-spacing: 1px;
+  font-family: 'Lato', 'sans-serif';
+}
+
+.welcome-link {
+  background-image: linear-gradient(
+    to right,
+    #000,
+    #000 50%,
+    #7c4dff 50%
+  ) !important;
+  font-size: 40px !important;
+}
+
+.explore-more-link,
+.visit-link,
+.welcome-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  background-image: linear-gradient(to right, #000, #000 50%, #5b43c0 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.explore-more-link::before,
+.visit-link::before {
+  content: "";
+  background: #000;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.explore-more-link:hover,
+.visit-link:hover,
+.welcome-link:hover {
+  background-position: 0;
+}
+
+.explore-more-link:hover::before,
+.visit-link:hover::before,
+.welcome-link:hover::before {
+  width: 100%;
+}
+
+.divider {
+  border-top: 4px solid #001972;
+}
+
+.home-page-description {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-text-area {
+  width: 50%;
+  margin: auto;
+}
+
+.right-image-area {
+  margin: auto;
+}
+
+.right-image-area img {
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 1201px) {
+  .left-text-area {
+    width: 47%;
+  }
+
+  .right-image-area {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .home-page-description {
+    display: block;
+  }
+
+  .left-text-area {
+    width: 100%;
+    text-align: center;
+  }
+
+  .right-image-area {
+    padding: 50px 0;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .welcome-text{
+    font-size: 35px;
+  }
+
+  .left-text-area p{
+    text-align: justify;
+  }
+
+  .right-image-area {
+    display: none;
+  }
+}

@@ -1,0 +1,8 @@
+.error-page-container {
+  background:#1b9cfc;
+}
+
+.error-page-container h1 {
+  font-weight: bold;
+  color: #fff;
+}

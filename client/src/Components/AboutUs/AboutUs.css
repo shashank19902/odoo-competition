@@ -1,0 +1,141 @@
+.our-vision-container {
+  border-radius: 20px;
+  color: white;
+  background: linear-gradient(120deg, #05445e 0%, #05445e 40%, #2a9df5 40%, #2a9df5 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 11vw;
+}
+
+.vision-mission-text {
+  color: black;
+}
+
+.mobile-view{
+  display: none;
+}
+
+.vision-mission-text{
+  width: 50%;
+}
+
+.our-mission-container {
+  border-radius: 20px;
+  color: white;
+  background: linear-gradient(120deg, #2a9df5 0%, #2a9df5 60%, #05445e 60%, #05445e 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.our-vision-container h3, .our-mission-container h3{
+  color: floralwhite;
+}
+
+.profile-card {
+  border-radius: 15px;
+  border: none;
+}
+
+.image1 img {
+  height: 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+}
+
+.image2 {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: -80px;
+}
+
+.image2 img {
+  position: relative;
+  display: block;
+  object-fit: cover;
+  z-index: 1;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.profile-card:hover .image2 img {
+  border-color: whitesmoke;
+  transition: 700ms;
+}
+
+.main-text {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.main-text h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.main-text h6 {
+  font-weight: 900;
+}
+
+.socials {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.socials i {
+  font-size: 20px;
+  font-weight: 100;
+  color: black;
+  padding: 0 15px;
+}
+
+.socials i:hover {
+  color: blue;
+}
+
+.about-us {
+  min-height: 80px;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media only screen and (max-width: 768px)
+{
+  .our-mission-container{
+    display: block;
+    text-align: center;
+    background: #05445e;
+  }
+
+  .our-vision-container{
+    display: block;
+    text-align: center;
+    background: #2a9df5;
+  }
+
+  .vision-mission-text{
+    width: 100%;
+  }
+
+  .mobile-view{
+    display: block;
+  }
+
+  .desktop-view{
+    display: none;
+  }
+
+  .vision-text{
+    color: wheat;
+  }
+}
